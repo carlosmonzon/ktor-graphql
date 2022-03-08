@@ -22,16 +22,21 @@ application {
 
 repositories {
     mavenCentral()
-    maven { url = uri("https://maven.pkg.jetbrains.space/public/p/ktor/eap") }
+//    maven { url = uri("https://maven.pkg.jetbrains.space/public/p/ktor/eap") }
 }
 
 dependencies {
-    implementation("io.ktor:ktor-server-core-jvm:$ktor_version")
-    implementation("io.ktor:ktor-server-netty-jvm:$ktor_version")
+    implementation("io.ktor:ktor-server-core:$ktor_version")
+    implementation("io.ktor:ktor-server-netty:$ktor_version")
+//    ktor2
+//    implementation("io.ktor:ktor-server-core-jvm:$ktor_version")
+//    implementation("io.ktor:ktor-server-netty-jvm:$ktor_version")
     implementation("ch.qos.logback:logback-classic:$logback_version")
-    testImplementation("io.ktor:ktor-server-tests-jvm:$ktor_version")
+    testImplementation("io.ktor:ktor-server-tests:$ktor_version")
+//    testImplementation("io.ktor:ktor-server-tests-jvm:$ktor_version")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
-    implementation("org.koin:koin-ktor:$koin_version")
+//    implementation("org.koin:koin-ktor:$koin_version")
+    implementation("io.insert-koin:koin-ktor:$koin_version")
     implementation("org.litote.kmongo:kmongo:$kmongo_version")
     implementation("io.ktor:ktor-server-netty:$ktor_version")
     implementation("com.apurebase:kgraphql:$kgraphql_version")
