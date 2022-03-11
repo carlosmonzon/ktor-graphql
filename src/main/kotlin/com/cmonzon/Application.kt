@@ -1,9 +1,10 @@
-package cmonzon.com
+package com.cmonzon
 
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
-import cmonzon.com.plugins.*
 import com.apurebase.kgraphql.GraphQL
+import com.cmonzon.graphql.dessertSchema
+import com.cmonzon.plugins.configureRouting
 import io.ktor.application.*
 
 fun main() {
@@ -12,11 +13,7 @@ fun main() {
         install(GraphQL) {
             playground = true
             schema {
-                query("hello") {
-                    resolver { ->
-                        "World"
-                    }
-                }
+                dessertSchema()
             }
         }
     }.start(wait = true)

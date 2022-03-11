@@ -1,4 +1,4 @@
-package cmonzon.com.plugins
+package com.cmonzon.plugins
 
 import io.ktor.application.*
 import io.ktor.response.*

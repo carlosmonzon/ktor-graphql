@@ -14,10 +14,10 @@ plugins {
     kotlin("jvm") version "1.6.10"
 }
 
-group = "cmonzon.com"
+group = "com.cmonzon"
 version = "0.0.1"
 application {
-    mainClass.set("cmonzon.com.ApplicationKt")
+    mainClass.set("com.cmonzon.ApplicationKt")
 }
 
 repositories {

@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f7c80cb-09cd-4d79-b92a-a14ed371a8ee" name="Changes" comment="">
+    <list default="true" id="6f7c80cb-09cd-4d79-b92a-a14ed371a8ee" name="Changes" comment="- Downgrade from ktor2 to ktor 1.6 due to kgrapql-ktor not support ktor2 yet https://github.com/aPureBase/KGraphQL/pull/179">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/cmonzon/data/Database.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/cmonzon/graphql/DessertSchema.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/cmonzon/model/Dessert.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/cmonzon/model/Model.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/cmonzon/repository/DessertRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/cmonzon/repository/RepositoryInterface.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cmonzon/com/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cmonzon/com/Application.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cmonzon/com/plugins/Routing.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/cmonzon/com/plugins/Routing.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cmonzon/com/Application.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/cmonzon/Application.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/cmonzon/com/plugins/Routing.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/cmonzon/plugins/Routing.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/cmonzon/com/ApplicationTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/com/cmonzon/ApplicationTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +26,15 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,8 +63,9 @@
   </component>
   <component name="RunManager">
     <configuration name="ApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cmonzon.com.ApplicationKt" />
+      <option name="MAIN_CLASS_NAME" value="com.cmonzon.ApplicationKt" />
       <module name="com.cmonzon.ktor-graphql.main" />
+      <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -69,6 +85,14 @@
       <option name="presentableId" value="Default" />
       <updated>1646357479513</updated>
     </task>
+    <task id="LOCAL-00001" summary="- Downgrade from ktor2 to ktor 1.6 due to kgrapql-ktor not support ktor2 yet https://github.com/aPureBase/KGraphQL/pull/179">
+      <created>1646741983984</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646741983984</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -81,5 +105,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- Downgrade from ktor2 to ktor 1.6 due to kgrapql-ktor not support ktor2 yet https://github.com/aPureBase/KGraphQL/pull/179" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Downgrade from ktor2 to ktor 1.6 due to kgrapql-ktor not support ktor2 yet https://github.com/aPureBase/KGraphQL/pull/179" />
   </component>
 </project>
